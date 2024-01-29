@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="./app.js"></script>
+</head>
+
+
+<body>
+<div class="site-content">
+    <div class="site-header">
+        <div class="container">
+            <a href="weather.html" class="branding">
+                <div class="logo-type">
+                    <h2 class="site-title">Weather Forecast</h2>
+                </div>
+            </a>
+
+            <div class="mobile-navigation"></div>
+
+        </div>
+    </div> <!-- .site-header -->
+
+    <div class="hero" data-bg-image="images/banner.png">
+        <div class="container">
+            <form action="#" class="find-location">
+                <input id="search-input" type="text" placeholder="Find your location...">
+                <input type="submit" onclick="searchWeather()" value="Find">
+            </form>
+
+        </div>
+    </div>
+    <div class="forecast-table">
+        <div class="forecast-table">
+            <div class="container">
+                <div class="forecast-container" id="data-container"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
